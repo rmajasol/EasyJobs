@@ -1,0 +1,36 @@
+$blueprint-grid-column : 24
+$blueprint-grid-width : 30px
+$blueprint-grid-margin : 10px
+
+
+@import blueprint
+
+#wrapper
+	+container
+
+h1
+	font-size: 3em
+	font-weight: bold
+
+li
+	list-style: none
+	padding: 20px 0
+
+	.job_link
+		
+
+	.job_title
+		+column(6)
+		font-size: 1.4em
+
+	.description
+		+column(18, true)
+		display: block
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+
+.new_job_link
+	float: right
+	font-weight: bold
+	font-size: 2em
