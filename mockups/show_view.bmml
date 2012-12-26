@@ -1,0 +1,45 @@
+<mockup version="1.0" skin="sketch" measuredW="981" measuredH="398" mockupW="773" mockupH="373">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="208" y="131" w="404" h="39" measuredW="375" measuredH="37" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>28</size>
+        <text>Ice%20Cream%20Tester%20Ice%20Cream</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Canvas" x="626" y="25" w="355" h="70" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="208" y="40" w="-1" h="-1" measuredW="206" measuredH="50" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>40</size>
+        <text>Easy%20Jobs%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Canvas" x="819" y="126" w="162" h="242" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Paragraph" x="208" y="239" w="559" h="140" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Get%20paid%20to%20test%20new%20ice%20cream%20all%20day%21%20Get%20paid%20to%20bla%20bla%20bla...%20Get%20paid%20to%20test%20new%20ice%20cream%20all%20day%21%20Get%20paid%20to%20bla%20bla%20bla...%20Get%20paid%20to%20test%20new%20ice%20cream%20all%20day%21%20Get%20paid%20to%20bla%20bla%20bla...%20Get%20paid%20to%20test%20new%20ice%20cream%20all%20day%21%20Get%20paid%20to%20bla%20bla%20bla...%20Get%20paid%20to%20test%20new%20ice%20cream%20all%20day%21%20Get%20paid%20to%20bla%20bla%20bla...</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="208" y="177" w="-1" h="-1" measuredW="230" measuredH="33" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>24</size>
+        <text>Ice%20Cream%20Industries</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Label" x="597" y="373" w="-1" h="-1" measuredW="163" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>16</size>
+        <text>Posted%20on%2007/01/2013</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Button" x="208" y="371" w="-1" h="-1" measuredW="81" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>See%20More</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
