@@ -1,19 +1,26 @@
 %p#notice= notice
 
 .job_show
-	.job_title
-		= @job.title
 
-	.company_name
-		= @job.company_name
+	.job_header
+		.job_title
+			= @job.title
+
+		.company_name
+			= @job.company_name
+
+	.job_date
+		POSTED ON
+		%br
+		=@job.created_at
 
 	%p.job_description
 		= @job.description
 
-
-
 	= link_to 'Show More', @job.details_link, class: "details_link"
 
-	= link_to 'Edit', edit_job_path(@job)
-	\|
-	= link_to 'Back', jobs_path
+	.job_links
+		/ - if @job.user == current_user
+		= link_to 'Edit', edit_job_path(@job)
+		\|
+		= link_to 'Back', jobs_path
