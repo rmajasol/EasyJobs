@@ -1,5 +1,14 @@
 Easyjobs::Application.routes.draw do
+  get "user_sessions/new"
+
+  resource :user_session
+  resources :users
+
   resources :jobs
+
+  match "/register" => "users#new", as: :register
+  match "/sign-in" => "user_sessions#new", as: :sign_in
+  match "/sign-out" => "user_sessions#destroy", as: :sign_out
 
   root to: 'jobs#index'
 
