@@ -20,3 +20,13 @@ git push
 # para no instalar las gemas del grupo de produccion
 # no hay que cambiar nada en database.yml
 bundle install --without production
+
+# creamos la aplicación en heroku
+heroku create --stack cedar
+# transferimos la clave
+heroku keys:add ~/.ssh/id_rsa.pub
+# copiamos de nuestro repo de github a heroku
+git push heroku master
+
+# ejecutamos la migración en heroku
+heroku run rake db:migrate
