@@ -2,6 +2,10 @@ $layout-path : "/assets/layout/"
 
 @import blueprint
 
+// **************************
+// BASIC STYLES
+// **************************
+
 body
 	background:	url(#{$layout-path}/bg.png) top center repeat-x, url(#{$layout-path}/folder_noise.png) top center
 	font-family: 'Rokkitt', serif
@@ -33,31 +37,56 @@ h1#logo
 	/* content (790px) / context (950px) = 0,83157894736842 */
 	width: 83.157894736842% 
 
+
+
+// **************************
+// JOB INDEX VIEW 
+// **************************
+
+ul#jobs
+	width: 100%
+
+ul#jobs li:nth-child(odd) .job_link
+	background: #DDF5FF
+	&:hover
+		background: #FFFFCC
+
+ul#jobs li:nth-child(even) .job_link
+	background: #EEFFFF
+	&:hover
+		background: #FFFFCC
 li
 	list-style: none
 	padding: 20px 0
 
 	.job_link
-		float: left
-		background: #FFC
-		
+		width: 98%
+		float: left	
+		padding: 20px 10px
+		text-decoration: none
+		color: black	
 
 	.job_title
-		+column(6)
-		font-size: 1.4em
+		+column(8)
+		font-size: 1.8em
 
 	.description
-		+column(18, true)
 		display: block
 		white-space: nowrap
 		overflow: hidden
 		text-overflow: ellipsis
+		color: #555
 
 .new_job_link
 	float: right
 	font-weight: bold
 	font-size: 2em
 
+
+
+// **************************
+// JOB SHOW VIEW  
+// **************************
 
 .job_show
 
@@ -95,6 +124,12 @@ li
 	.job_links
 		float: left
 		clear: both
+
+
+
+// **************************
+// FORMS  
+// **************************
 
 h2
 	font-weight: bold

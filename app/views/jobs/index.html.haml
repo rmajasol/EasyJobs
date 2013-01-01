@@ -1,5 +1,6 @@
 = link_to 'New Job', new_job_path, class: "new_job_link"
-%ul
+
+%ul#jobs
 	- @jobs.each do |job|
 		%li
 			= link_to(job, class: "job_link") do
