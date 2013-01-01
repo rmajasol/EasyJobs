@@ -9,6 +9,11 @@
 		.company_name
 			= @job.company_name
 
+		- if @job.user
+			.user
+				Posted by
+				= link_to @job.user.name, @job.user
+
 	.job_date
 		POSTED ON
 		%br
@@ -16,6 +21,7 @@
 
 	%p.job_description
 		= @job.description
+
 
 	= link_to 'Show More', @job.details_link, class: "details_link"
 
