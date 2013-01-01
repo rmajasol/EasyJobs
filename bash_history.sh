@@ -11,3 +11,12 @@ git commit -m "Styled the index view"
 git checkout master
 git merge style
 git push
+
+# nuevo commit
+git add .
+git commit -m "Styled some forms and generally cleaned things up"
+git push
+
+# para no instalar las gemas del grupo de produccion
+# no hay que cambiar nada en database.yml
+bundle install --without production
