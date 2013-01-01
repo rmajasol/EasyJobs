@@ -6,6 +6,9 @@ $layout-path : "/assets/layout/"
 // BASIC STYLES
 // **************************
 
+*
+	transition: 0.1s linear
+
 body
 	background:	url(#{$layout-path}/bg.png) top center repeat-x, url(#{$layout-path}/folder_noise.png) top center
 	font-family: 'Rokkitt', serif
@@ -81,6 +84,19 @@ li
 	float: right
 	font-weight: bold
 	font-size: 2em
+	background: #D70000
+	text-decoration: none
+	color: white
+	text-shadow: 0px -1px 1px rgba(0,0,0,0.8) 
+	padding: 5px 10px
+	border: 4px solid #FFF
+	box-shadow: 0px 1px 4px 2px rgba(0,0,0,0.3)
+	border-radius: 8px
+	margin-bottom: 24px
+
+	&:hover, &:active
+		box-shadow: 0px 1px 6px 3px rgba(0,0,0,0.4)
+		background: #CB0000
 
 
 
