@@ -26,7 +26,7 @@
 	= link_to 'Show More', @job.details_link, class: "details_link"
 
 	.job_links
-		/ - if @job.user == current_user
-		= link_to 'Edit', edit_job_path(@job)
-		\|
+		- if @job.user == current_user
+			= link_to 'Edit', edit_job_path(@job)
+			\|
 		= link_to 'Back', jobs_path

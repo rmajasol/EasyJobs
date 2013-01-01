@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
 	before_filter :require_current_user, except: [:index, :show]
+	before_filter :require_job_belongs_to_current_user, only: [:edit, :update]
 
 	# GET /jobs
 	# GET /jobs.json
@@ -36,13 +37,11 @@ class JobsController < ApplicationController
 
 	# GET /jobs/1/edit
 	def edit
-		@job = Job.find(params[:id])
 	end
 
 	# POST /jobs
 	# POST /jobs.json
 	def create
-		@job = Job.new(params[:job])
 		@job.user = current_user
 
 		respond_to do |format|
@@ -59,8 +58,6 @@ class JobsController < ApplicationController
 	# PUT /jobs/1
 	# PUT /jobs/1.json
 	def update
-		@job = Job.find(params[:id])
-
 		respond_to do |format|
 			if @job.update_attributes(params[:job])
 				format.html { redirect_to @job, notice: 'Job was successfully updated.' }
@@ -75,12 +72,18 @@ class JobsController < ApplicationController
 	# DELETE /jobs/1
 	# DELETE /jobs/1.json
 	def destroy
-		@job = Job.find(params[:id])
 		@job.destroy
 
 		respond_to do |format|
 			format.html { redirect_to jobs_url }
 			format.json { head :no_content }
 		end
+	end
+
+
+	private
+
+	def require_job_belongs_to_current_user 
+		@job = current_user.jobs.find(params[:id])
 	end
 end
