@@ -15,8 +15,9 @@
 	#wrapper
 
 		#header
-			%h1#logo
-				Easy Jobs!
+			= link_to root_url do
+				%h1#logo
+					Easy Jobs!
 			%p.notice= flash[:notice]
 			%p.error= flash[:error]
 	
