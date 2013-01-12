@@ -1,5 +1,7 @@
 == Proyecto EasyJobs
 
+De http://teamtreehouse.com/library/design-and-development
+
 Para aprender un poco sobre el manejo de Rails. Se muestra a lo largo de los commits 
 la creación de un directorio sobre anuncios de trabajo que el usuario puede agregar
 estando previamente autentificado en la aplicación.
